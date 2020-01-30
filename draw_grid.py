@@ -98,9 +98,6 @@ def draw_perimeter(puzzle: Puzzle):
     print('PU;')
 
 def draw_empty_grid(puzzle: Puzzle):
-    # Initialize; select pen 1
-    print('IN;SP1;')
-
     draw_perimeter(puzzle=puzzle)
 
     draw_vertical_lines(puzzle=puzzle)
@@ -203,10 +200,14 @@ if __name__ == '__main__':
     # Read puzzle file
     puzzle = parse_puzzle_file(path=puzzle_path)
 
+    # Initialize; select pen 1
+    print('IN;SP1;')
+
     draw_empty_grid(puzzle=puzzle)
 
     fill_black_squares(puzzle=puzzle)
 
     fill_letters(puzzle=puzzle)
 
-    print('SP0;')  # Put then pen back (select pen 0)
+    # Put the pen back (select pen 0)
+    print('SP0;')
