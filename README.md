@@ -2,7 +2,7 @@
 
 Crossword Plotter is a tool for transcribing crossword puzzles - filled, unfilled, or partially filled - using a plotter machine.
 
-It is designed for use with a HP7440A plotter (old model from the 80s without support for many commands), but should work with any plotter that accepts `.hpgl` files.
+It is designed for use with a HP7440A plotter (old model from the 80s without support for many commands), but should work with any plotter that accepts [HPGL](https://en.wikipedia.org/wiki/HP-GL) files.
 
 ## How to Use
 
